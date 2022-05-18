@@ -6,12 +6,12 @@ set -euo pipefail
 
 sf=../example-data/irods.txt #tab separated file containing sampleIDs and corresponding irods path to directory
 barcode_path=filtered_feature_bc_matrix/barcodes.tsv.gz #path to filtered barcodes file within irods directory
-bam_file=gex_possorted_bam.bam #name of bam file within irods directory
-index_file=gex_possorted_bam.bam.bai #name of index file within irods directory
+bam_file=possorted_bam.bam #name of bam file within irods directory
+index_file=possorted_bam.bam.bai #name of index file within irods directory
 
 ###################### DONT CHANGE OPTIONS BELOW THIS LINE ###########################
 
-cat $sf | head -n 1 | while read name path; do
+cat $sf | while read name path; do
   ( echo "-- $path"
     iget -f -v -N 4 -K $path/$barcode_path
     gunzip barcodes.tsv.gz
