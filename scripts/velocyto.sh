@@ -3,7 +3,7 @@
 export LC_ALL=C.UTF-8
 export LANG=C.UTF-8
 
-im=/nfs/cellgeni/singularity/images/velocyto2.sif #velocyto image
+im=/nfs/cellgeni/singularity/images/images/velocyto_v0.17.17.sif #velocyto image
 
 TAG=$1 #sampleID
 GTF=/nfs/cellgeni/STAR/human/2020A/GRCh38_v32_filtered.gtf #gtf file to use
