@@ -1,13 +1,10 @@
-ARG ubuntu_version=18.04
+FROM ubuntu:20.04
 
-FROM ubuntu:$ubuntu_version
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN set -xe \
     && apt-get -y update \
-    && apt-get -y install python3 \
-    && apt-get -y install python3-dev \
-    && apt-get -y install python3-pip \
-    && apt-get -y install samtools
+    && apt-get -y install libjpeg-turbo8 python3 python3-dev python3-pip samtools
 
 RUN pip3 install --upgrade pip
 
