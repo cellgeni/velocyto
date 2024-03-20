@@ -1,3 +1,6 @@
+| <h1>⚠️ This repo has been archived. Please use [nf-velocyto](https://github.com/cellgeni/nf-velocyto) </h1>|
+| ----------------------------------------------------------------------------------------------- |
+
 # Velocyto
 Repo containing our scripts for running velocyto
 
